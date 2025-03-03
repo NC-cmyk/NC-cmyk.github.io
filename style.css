@@ -1,8 +1,11 @@
 body {
-	background-color: #827d75;
 	color: white;
 	font-family: monospace;
 	font-size: 18px;
+	background-color: #827d75;
+	background-image:  repeating-linear-gradient(45deg, #726c62 25%, transparent 25%, transparent 75%, #726c62 75%, #726c62), repeating-linear-gradient(45deg, #726c62 25%, #827d75 25%, #827d75 75%, #726c62 75%, #726c62);
+	background-position: 0 0, 80px 80px;
+	background-size: 160px 160px;
 }
 
 /* Font taken from Font Awesome */
@@ -26,13 +29,21 @@ h1:first-of-type {
 	margin-top: 0;
 }
 
+h3:before {
+	content: "> ";
+}
+
+h3 {
+	margin: 18px 0 18px 0;
+}
+
 a {
 	color: #edea35;
 	position: relative;
 }
 
 a:visited {
-	color: #cc821e;
+	color: #e28911;
 }
 
 a[target="_blank"]:after {
@@ -47,4 +58,8 @@ ul {
 
 li {
 	margin-top: 18px;
+}
+
+hr {
+	border-bottom: 1px solid white;
 }
