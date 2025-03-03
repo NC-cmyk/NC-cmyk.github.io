@@ -1,0 +1,50 @@
+body {
+	background-color: #827d75;
+	color: white;
+	font-family: monospace;
+	font-size: 18px;
+}
+
+/* Font taken from Font Awesome */
+@font-face {
+	font-family: 'FA Symbols';
+	src: url("webfonts/fa-solid-900.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.main {
+	width: 800px;
+	max-width: 80%;
+	background-color: #57524a;
+	border: 2px solid white;
+	margin: auto;
+	padding: 18px;
+}
+
+h1:first-of-type {
+	margin-top: 0;
+}
+
+a {
+	color: #edea35;
+	position: relative;
+}
+
+a:visited {
+	color: #cc821e;
+}
+
+a[target="_blank"]:after {
+	font-family: 'FA Symbols';
+	content: "\00a0\f08e";
+	font-size: 0.7em;
+}
+
+ul {
+	list-style: square;
+}
+
+li {
+	margin-top: 18px;
+}
