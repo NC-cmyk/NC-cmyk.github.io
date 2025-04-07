@@ -2,8 +2,8 @@ body {
 	color: white;
 	font-family: monospace;
 	font-size: 18px;
-	background-color: #827d75;
-	background-image:  repeating-linear-gradient(45deg, #726c62 25%, transparent 25%, transparent 75%, #726c62 75%, #726c62), repeating-linear-gradient(45deg, #726c62 25%, #827d75 25%, #827d75 75%, #726c62 75%, #726c62);
+	background-color: #373635;
+	background-image:  repeating-linear-gradient(45deg, #3e3e3d 25%, transparent 25%, transparent 75%, #3e3e3d 75%, #3e3e3d), repeating-linear-gradient(45deg, #3e3e3d 25%, #373635 25%, #373635 75%, #3e3e3d 75%, #3e3e3d);
 	background-position: 0 0, 80px 80px;
 	background-size: 160px 160px;
 }
@@ -19,7 +19,7 @@ body {
 .main {
 	width: 800px;
 	max-width: 80%;
-	background-color: #57524a;
+	background-color: #4b4b4a;
 	border: 2px solid white;
 	margin: auto;
 	padding: 18px;
@@ -38,12 +38,16 @@ h3 {
 }
 
 a {
-	color: #edea35;
+	color: #ffd669;
 	position: relative;
 }
 
 a:visited {
-	color: #e28911;
+	color: #ee9c2d;
+}
+
+a:hover {
+	filter: brightness(0.75);
 }
 
 a[target="_blank"]:after {
