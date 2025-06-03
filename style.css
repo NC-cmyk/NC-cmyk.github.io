@@ -1,26 +1,50 @@
-body {
-	color: white;
-	font-family: monospace;
-	font-size: 18px;
-	background-color: #373635;
-	background-image:  repeating-linear-gradient(45deg, #3e3e3d 25%, transparent 25%, transparent 75%, #3e3e3d 75%, #3e3e3d), repeating-linear-gradient(45deg, #3e3e3d 25%, #373635 25%, #373635 75%, #3e3e3d 75%, #3e3e3d);
-	background-position: 0 0, 80px 80px;
-	background-size: 160px 160px;
-}
-
 /* Font taken from Font Awesome */
 @font-face {
 	font-family: 'FA Symbols';
-	src: url("webfonts/fa-solid-900.woff2") format("woff2");
+	src: url("fonts/fa-solid-900.woff2") format("woff2");
 	font-weight: normal;
 	font-style: normal;
 }
 
+/* Ubuntu font by Ubuntu */
+@font-face {
+	font-family: 'Ubuntu';
+	src: url("fonts/UbuntuMono-R.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url("fonts/UbuntuMono-RI.ttf");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url("fonts/UbuntuMono-B.ttf");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url("fonts/UbuntuMono-BI.ttf");
+	font-weight: bold;
+	font-style: italic;
+}
+
+body {
+	color: white;
+	font-family: 'Ubuntu', monospace;
+	font-size: 1rem;
+	background-color: #222;
+}
+
 .main {
-	width: 800px;
+	width: 850px;
 	max-width: 80%;
-	background-color: #4b4b4a;
-	border: 2px solid white;
 	margin: auto;
 	padding: 18px;
 }
@@ -56,14 +80,49 @@ a[target="_blank"]:after {
 	font-size: 0.7em;
 }
 
+img {
+	max-width: 90%;
+	border: 2px solid white;
+	display: block;
+	margin: auto;
+}
+
+.flex-link {
+	flex-basis: 50%;
+}
+
 ul {
-	list-style: square;
+	list-style: none;
+	padding: 0;
+}
+
+ul.no-spacing {
+	margin-top: 0;
+}
+
+ul.no-spacing > li {
+	margin-top: 0.5rem;
 }
 
 li {
-	margin-top: 18px;
+	margin-top: 1.5rem;
+	display: flex;
+}
+
+li:before {
+	content: "/ ";
+}
+
+li:first-of-type, ul.no-spacing > li:first-of-type {
+	margin-top: 0;
+}
+
+li > p {
+	margin: 0;
+	padding-left: 0.5rem;
 }
 
 hr {
-	border-bottom: 1px solid white;
+	border: 1px solid white;
+	margin: 18px 0;
 }
